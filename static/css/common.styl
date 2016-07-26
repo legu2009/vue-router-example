@@ -1,0 +1,279 @@
+@import "../../src/variables.styl"
+body
+    line-height 1.6;
+    font-family Helvetica Neue, Helvetica, Arial, sans-serif, "Microsoft Yahei"
+@font-face {font-family: "iconfont";
+  src: url('../font/iconfont.eot?t=1468891716'); /* IE9*/
+  src: url('../font/iconfont.eot?t=1468891716#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/iconfont.woff?t=1468891716') format('woff'), /* chrome, firefox */
+  url('../font/iconfont.ttf?t=1468891716') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../font/iconfont.svg?t=1468891716#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.header
+    $hmin((100rem/$fz))
+    background $c33
+    position relative
+    border-bottom 1px solid $c31
+    .header-left
+        position: absolute;
+        width (70rem/$fz)
+        height (70rem/$fz)
+        left (7rem/$fz)
+        top 50%
+        margin-top -(35rem/$fz)
+        a
+            display block
+            img
+                $blockimg()
+    .header-title
+        text-align center
+        font-weight normal
+        font-size (42rem/$fz)
+        color $c12
+        font-weight 700
+.clearfix:after
+    content "."
+    display block
+    height 0
+    clear both
+    visibility hidden
+    font-size 0
+.back-top
+    $circle(77rem/$fz)
+    position fixed
+    bottom (160rem/$fz)
+    right (14rem/$fz)
+    background-color rgba(0,0,0,0.7)
+    text-align center
+    color white
+    line-height (77rem/$fz)
+    font-size (50rem/$fz)
+    display none
+.footer-margin
+    margin-bottom (120rem/$fz)
+footer.footer-nav
+    $flex()
+    height (115rem/$fz)
+    border-top 1px solid $c32
+    box-shadow 0 2px 3px #cecdca
+    background-color white
+    position fixed
+    bottom 0
+    width 100%
+    font-size (46rem/$fz)
+    text-align center
+    line-height (84rem/$fz)
+    color $c21
+    > div
+        $flex1()
+        height 100%
+        position relative
+        &.sel
+            color $c44
+            .footer-num
+                background-color: $c44
+    .footer-text
+        position: absolute
+        bottom: (-14rem/$fz);
+        font-size: (22rem/$fz);
+        text-align: center
+        width: 100%
+    .footer-num
+        position: absolute
+        left: 50%;
+        top (18rem/$fz)
+        color: #fff
+        background-color: $c11
+        $circle(26rem/$fz)
+        line-height: (26rem/$fz)
+        font-size: (14rem/$fz)
+        margin-left (8rem/$fz)
+.footer-margin.footer-btn
+    margin-bottom (152rem/$fz)
+footer.footer-btn
+    position fixed
+    bottom 0
+    width 100%
+    background-color #fff
+    border-top 1px solid $c32
+    font-size $t3
+    font-weight bold
+    a
+        display block
+        background-color $c13
+        text-align center
+        color #fff
+        border-radius (10rem/$fz)
+        $hmin((97rem/$fz))
+        margin: (20rem/$fz) (83rem/$fz)
+    &.footer-btn2
+        $hmin(138rem/$fz)
+        .footer-money
+            color $c11
+            margin-right: (364rem/$fz)
+            margin-left: (32rem/$fz)
+        a
+            width: (300rem/$fz)
+            float: right
+            margin: (20rem/$fz) (32rem/$fz)
+    &.footer-btns
+        ul
+            margin: 0 (20rem/$fz)
+            $flex()
+            li
+                padding: 0 (10rem/$fz)
+                $flex1()
+                a
+                    width: 100%;
+                    margin: (20rem/$fz) 0
+                a.disable
+                    background: $c33
+                    color: $c22
+.vauth, .vreserve, .vconfirm
+    .weui_cell_ft.with_arrow:after
+        margin-right (4rem/$fz)
+        border-color $c21
+        height: (15rem/$fz)
+        width: (15rem/$fz)
+        top: (-4rem/$fz)
+    .vux-no-group-title
+        margin-top (15rem/$fz)
+        padding (20rem/$fz) (30rem/$fz)
+    .weui_cell
+        line-height: (89rem/$fz)
+        padding: 0
+        &.mid-line
+            padding (30rem/$fz) 0px
+            margin 0 (30rem/$fz)
+            &:before
+                left 0
+    .airport-info p
+        text-align right
+        height 20px
+        line-height 20px
+    .weui_cell_bd
+        font-size: $t5
+    .weui_cell:before
+        left 0
+    .vux-number-selector
+        $hmin(58rem/$fz)
+        width: (58rem/$fz)
+        text-align: center
+        font-size: $t1
+    .vux-number-input
+        $hmin(58rem/$fz)
+        width: (140rem/$fz)
+    .vux-number-selector
+        color: $c21
+    .airport-choose .weui_cell
+        padding-bottom: (20rem/$fz)
+    .airport-info p
+        $hmin(40rem/$fz)
+    .airport-choose .weui_cell:before
+        display: none
+    .weui_cell_ft
+        color: $c21
+        font-size: $t3
+    .weui_cell_hd
+        font-size: $t5
+        color $c22
+    .weui_input
+        text-align: right
+    .weui_cell_bd.weui_cell_primary
+        font-size (28rem/$fz)
+.vconfirm
+    .order-goods-info.weui_cell:before
+        display: none
+    .airport-info
+        margin: (10rem/$fz) 0 (20rem/$fz)
+    .order-goods-img
+        height (234rem/$fz)
+        width (239rem/$fz)
+        float left
+        border 1px solid $c32
+        background url("/static/images/goods.png") center center no-repeat
+        background-size: 100%;
+    .order-goods-text
+        margin-left: (300rem/$fz)
+        p
+            $hmin((40rem/$fz))
+            span
+                color $c11
+            &:last-child
+                margin-top (43rem/$fz)
+        .order-goods-title
+            font-size $t4
+.order-goods
+    margin-top: (15rem/$fz)
+    background #fff
+    padding: (20rem/$fz) 0
+    font-size $t2
+    color: $c22
+    &>div
+        line-height: (90rem/$fz)
+        padding: 0 (25rem/$fz)
+        border-top 1px solid $c32
+        &:first-child
+            border-top none
+        &.order-goods-detail
+            font-size $t6
+            padding-top: (35rem/$fz)
+            min-height: (300rem/$fz)
+    .order-pay-wechrt,.order-pay-alipay
+        color #000
+        font-size: $t5
+        position: relative
+        padding: (10rem/$fz) 0 (10rem/$fz) (120rem/$fz)
+        &:after
+            position: absolute
+            content: ""
+            display: block
+            right: (70rem/$fz)
+            height: (30rem/$fz)
+            width (30rem/$fz)
+            top: 50%
+            margin-top: (-15rem/$fz)
+            background: url(/static/images/pay-no.png) center center no-repeat
+            background-size: 100%
+        &.sel:after
+            background-image: url(/static/images/pay-sel.png)
+        &:before
+            position: absolute
+            content: ""
+            display: block
+            margin-top: (-38rem/$fz)
+            height: (75rem/$fz)
+            width (75rem/$fz)
+            background: url(/static/images/pay-alipay.png) center center no-repeat
+            left: (25rem/$fz)
+            top: 50%;
+    .order-pay-alipay:before
+        background-image: url(/static/images/pay-wechrt.png)
+.order-goods-info
+    color: #000
+.order-goods-no
+    font-weight: 700
+    span
+        display: inline-block
+        margin-left: (20rem/$fz)
+        font-weight: 300
+.order-goods-more,.order-goods-right
+    color $c13
+    display: block
+    float: right
+.order-goods-right
+    color #000
+
+.tleft
+    text-align: left !important
+.red
+    color: $c11
+.mt0
+    margin-top: 0 !important

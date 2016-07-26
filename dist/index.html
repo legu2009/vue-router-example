@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><title>蜗牛商城</title><meta charset=utf-8><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=black><meta content="telephone=no" name=format-detection><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"><link rel=stylesheet href=static/css/base.css><link rel=stylesheet href=static/css/common.css><script>(function (doc, win) {
+			var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				recalc = function () {
+					var clientWidth = docEl.clientWidth;
+					if (clientWidth > 1024) {
+					clientWidth = 1024;
+					}
+					if (!clientWidth) return;
+					docEl.style.fontSize = 75 * (clientWidth / 750) + 'px';
+				};
+			if (!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+			recalc();
+			//alert(docEl.style.fontSize);
+		})(document, window);
+		function goLogin(){
+			var href = window.location.href;
+			var login_url = 'http://m.mall.snail.com/login.html?goto=' +encodeURIComponent(href);
+			window.location.href = login_url;
+		}</script></head><body><div id=app></div><script src=static/js/jquery-2.1.1.min.js></script><script src=static/js/swiper-3.3.1.jquery.min.js></script><script type=text/javascript src=./main.js?248b6304160950305317></script></body></html>

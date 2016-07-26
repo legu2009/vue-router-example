@@ -1,0 +1,58 @@
+body {
+  font-family: "Microsoft Yahei"; }
+
+.header {
+  height: 1.32rem;
+  line-height: 1.32rem;
+  background: #f2f2f2;
+  position: relative;
+  border-bottom: 1px solid #d0d0d0; }
+
+.header .left {
+  position: absolute;
+  width: 0.93333rem;
+  height: 0.93333rem;
+  left: 0.09333rem;
+  top: 50%;
+  margin-top: -0.46667rem; }
+
+.header .left a {
+  display: block; }
+  .header .left a img {
+    width: 100%;
+    display: block; }
+
+.header .tit h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 0.50667rem; }
+
+.header .tit span {
+  color: #333333; }
+
+.dbox {
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  -moz-box-direction: nornal;
+  -webkit-box-direction: nornal;
+  box-direction: nornal;
+  -webkit-box-orient: horizontal;
+  box-sizing: border-box; }
+
+.flex1 {
+  -webkit-box-flex: 1;
+  width: 0;
+  box-sizing: border-box; }
+
+.flex2 {
+  -webkit-box-flex: 2;
+  width: 0;
+  box-sizing: border-box; }
+
+.flex3 {
+  -webkit-box-flex: 3;
+  width: 0;
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=common.css.map */

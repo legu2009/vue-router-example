@@ -1,0 +1,91 @@
+@import "../../variables.styl"
+.vgoods .swiper-container
+    overflow hidden
+    position relative
+    height (407rem/$fz)
+    border-bottom 1px solid #dedede
+    background-color #fff
+    width 100%
+    .swiper-wrapper div img
+        display block
+        width (600rem/$fz)
+        height (325rem/$fz)
+        margin (25rem/$fz) auto
+    .pagination
+        margin-bottom (20rem/$fz)
+        span
+            $circle(10px)
+            background-color $c32
+        .swiper-pagination-bullet-active
+            background-color $c11
+.card-text
+    background-color #fff
+    padding (35rem/$fz) 0 (30rem/$fz) (30rem/$fz)
+    .card-title
+        color $c12
+        font-size (36rem/$fz)
+        font-weight bold
+        margin-bottom (15rem/$fz)
+    .card-desc
+        color $c11
+        font-size (28rem/$fz)
+    .card-price
+        font-size (40rem/$fz)
+        color $c11
+        font-weight bold
+        margin-top (30rem/$fz)
+.card-choose
+    margin-top (15rem/$fz)
+    dl
+        padding (14rem/$fz) 0 (18rem/$fz) (28rem/$fz)
+        background-color #fff
+        dt
+            $hmin(76rem/$fz)
+            color $c12
+            font-size $t4
+            font-weight bold
+        dd
+            float left
+            margin 0 (20rem/$fz) (20rem/$fz) 0
+            a 
+                display block
+                $hmin(60rem/$fz)
+                border 1px solid #dddddd
+                font-size (26rem/$fz)
+                color #323436
+                min-width (198rem/$fz)
+                padding 0 (40rem/$fz)
+                box-sizing border-box
+                text-align center
+                border-radius (10rem/$fz)
+                i
+                    width (19rem/$fz)
+                    height (14rem/$fz)
+                    display inline-block
+                    background url("http://m.mall.snail.com/globalCard/images/ok.png") 0 0 no-repeat
+                    -webkit-background-size contain
+                    background-size contain
+                    display none
+                &.sel
+                    border-color #4dbd21
+                    color #4dbd21
+                    i
+                        display inline-block
+.card-detail
+    margin-top (15rem/$fz)
+    .card-detail-head
+        $flex()
+        $hmin(30rem/$fz)
+        padding: (35rem/$fz) 0
+        background-color #fff
+        border-bottom 1px solid #e7e7e7
+        font-size (30rem/$fz)
+        color $c22
+        text-align: center
+        &>div
+            $flex1()
+            box-sizing border-box
+            &.sel
+                color $c12
+            &:first-child
+                border-right 1px solid #dedede

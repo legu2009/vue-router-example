@@ -1,0 +1,166 @@
+@import "../../variables.styl"
+.vindex
+    .header
+        width 100%
+        height (90rem/$fz)
+        background $c33
+        color $c12
+        border-bottom 1px solid c32
+        box-shadow 0 2px 3px #cecdca
+        text-align center
+        position relative
+        .logo
+            width (160rem/$fz)
+            height (53rem/$fz)
+            background url(http://m.mall.snail.com/images/login.jpg) no-repeat
+            background-size 100%
+            position absolute
+            top (17rem/$fz)
+            left (29rem/$fz)
+        .user
+            position absolute
+            right (30rem/$fz)
+            top (27rem/$fz)
+            width (36rem/$fz)
+            height (36rem/$fz)
+            background url(http://m.mall.snail.com/images/user.png) no-repeat
+            background-size 100%
+.swiper-container 
+    overflow hidden
+    position relative
+    height (320rem/$fz)
+    a
+        display block
+        img
+            display block
+            width 100%
+    .pagination
+        width 100%
+        position absolute
+        left 0
+        bottom (26rem/$fz)
+        height (12rem/$fz)
+        bottom (26rem/$fz)
+        text-align center
+        font-size (12rem/$fz)
+        z-index 100
+        span
+            width (12rem/$fz)
+            height (12rem/$fz)
+            background #fff
+            display inline-block
+            margin 0 (12rem/$fz)
+            border-radius 50%
+        .swiper-pagination-bullet-active
+            background-color $c41
+        .swiper-pagination-bullet
+            opacity 1
+.vindex
+    .top-news
+        font-size $t3
+        padding (20rem/$fz) (30rem/$fz) (20rem/$fz) (15rem/$fz)
+        background-color #ff
+        margin-bottom (15rem/$fz)
+        &>div
+            $flex()
+            $ellipsis()
+    .top-news-title
+        font-weight 700
+        border-right 1px solid $c32
+        padding 0 (15rem/$fz)
+    .top-news-desc
+        margin 0 (15rem/$fz)
+        color $c22
+        $flex1()
+    .top-goods
+        height (280rem/$fz)
+        width 100%
+        $flex()
+        margin-bottom (15rem/$fz)
+        text-align center
+    .top-goods-item
+        $flex1()
+        margin-left (15rem/$fz)
+        background-color white
+        overflow hidden
+        padding (30rem/$fz) 0
+        &:first-child
+            margin-left 0
+            .top-goods-title
+                color $c41
+        &:nth-child(2)
+            .top-goods-title
+                color $c42
+        &:nth-child(3)
+            .top-goods-title
+                color $c44
+        a
+            $block()
+        .top-goods-title
+            font-size $t4
+            line-height 1
+        .top-goods-desc
+            font-size $t7
+            color $c22
+        img
+            $blockimg()
+            margin 0 auto
+            max-width (195rem/$fz)
+            height (140rem/$fz)
+            margin-top (15rem/$fz)
+    .top-gift
+        $block()
+        height (140rem/$fz)
+        img
+            $blockimg()
+    .channels-title
+        padding (25rem/$fz) 0
+        text-align center
+        font-size $t1
+        &::before
+            display inline-block
+            margin-right (15rem/$fz)
+            color $c22
+            content "/"
+        &::after
+            display inline-block
+            margin-left (15rem/$fz)
+            content "/"
+            color $c22
+    .channels-box
+        background-color #fff
+        box-sizing border-box
+        .channels-item
+            box-sizing border-box
+            width 50%
+            height (434rem/$fz)
+            border-top 1px solid $c32
+            float left
+            text-align center
+            position relative
+            &:nth-child(2n + 1)
+                border-right 1px solid $c32
+            &:nth-child(1),&:nth-child(2)
+                border-top none
+        .channels-icon
+            $circle(64rem/$fz)
+            position absolute
+            top (33rem/$fz)
+            right (40rem/$fz)
+            color #fff
+            background-color $c11
+            font-size $t7
+            $hmin(64rem/$fz)
+        .channels-img
+            $blockimg()
+            margin (50rem/$fz) auto 0
+            max-width (270rem/$fz)
+            height (250rem/$fz)
+        .channels-item-title
+            font-size $t7
+            margin-top (30rem/$fz)
+            hmin((40rem/$fz))
+        .channels-item-price
+            font-size $t7
+            hmin((30rem/$fz))
+            color $c11
