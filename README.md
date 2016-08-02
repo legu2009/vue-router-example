@@ -1,13 +1,13 @@
 ## 云卡机项目 参考以下项目搭建工程
-# Vue.js HackerNews clone
+# Vue.js HackerNews clone [Live demo](http://vuejs.github.io/vue-hackernews/)
 
 ### Building
 
 ``` bash
 npm install
 # watch:
-npm run dev
+dev.bat
 # build:
-npm run build
+build.bat
 ```
 
